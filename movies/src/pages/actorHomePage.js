@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import { getActors } from "../api/tmdb-api";
 import PageTemplate from '../components/templateActorListPage';
 import { useQuery } from 'react-query';
@@ -20,7 +20,7 @@ const HomePage = (props) => {
     const handlePageChange = (event, value) => {
         setPage(value);
       };
-    const totalPages = Math.min(data.total_pages, 600); // Limit totalPages to 600
+    const totalPages = Math.min(data.total_pages, 100); // Limit totalPages to 600
     return (
 
      <>
