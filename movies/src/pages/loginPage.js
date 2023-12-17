@@ -15,7 +15,6 @@ const LoginPage = props => {
 
     let location = useLocation();
 
-    // Set 'from' to path where browser is redirected after a successful login - either / or the protected path user requested
     const { from } = location.state ? { from: location.state.from.pathname } : { from: "/" };
 
     if (context.isAuthenticated === true) {
@@ -24,8 +23,8 @@ const LoginPage = props => {
 
     return (
         <>
-            <h2>Login page</h2>
-            <p>You must log in to view the protected pages </p>
+            <h2>Login Page</h2>
+            <p>To see the movie pages, you are required to sign in. </p>
             <input id="username" placeholder="user name" onChange={e => {
                 setUserName(e.target.value);
             }}></input><br />

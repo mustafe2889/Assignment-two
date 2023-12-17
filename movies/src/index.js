@@ -16,7 +16,7 @@ import LatestMoviesPage from "./pages/latestMoviesPage";
 import TopRatedMoviePage from "./pages/topRatedMoviesPage";
 import PopularMoviePage from "./pages/popularMoviesPage";
 import ActorHomePage from "./pages/actorHomePage";
-import ActorPage from "./pages/actorDetailsPage";
+// import ActorPage from "./pages/actorDetailsPage";
 import MovieCreditsPage from "./pages/movieCreditsPage";
 import CreditsPage from "./pages/creditsPage";
 import LoginPage from "./pages/loginPage";
@@ -62,6 +62,7 @@ const App = () => {
         </Route>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={ <SignUpPage /> } />
+          <Route path="/logout" element={<LoginPage />} />
 
         </Routes>
         </MoviesContextProvider>
