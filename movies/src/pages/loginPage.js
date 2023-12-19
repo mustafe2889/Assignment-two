@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from '../contexts/authContext';
 import { Link } from "react-router-dom";
+import {Button, TextField, Grid, Paper, Typography} from '@mui/material';
+
 
 const LoginPage = props => {
     const context = useContext(AuthContext);
@@ -23,18 +25,53 @@ const LoginPage = props => {
 
     return (
         <>
-            <h2>Login Page</h2>
-            <p>To see the movie pages, you are required to sign in. </p>
-            <input id="username" placeholder="user name" onChange={e => {
+             <Grid container style={{minHeight: '100vh'}}>
+            <Grid item xs={12} sm={6} md={5} style={{margin: 'auto'}}>
+                <Paper style={{padding: 20, marginTop: 8}}>
+            <Typography variant="h5" align="center" margin="dense">
+            Login Page
+           
+                     
+                        <br>
+                        </br>
+                        
+            <TextField label="User Name"  type="user name" fullWidth margin="normal" value={userName} onChange={e => {
                 setUserName(e.target.value);
-            }}></input><br />
-            <input id="password" type="password" placeholder="password" onChange={e => {
+            }}>
+                </TextField>
+
+                
+                <br />
+            <TextField label="Password" type="password" fullWidth margin="normal" value={password} onChange={e => {
                 setPassword(e.target.value);
-            }}></input><br />
-            {/* Login web form  */}
-            <button onClick={login}>Log in</button>
+            }}>
+
+            </TextField>
+            
+            <br />
+            <br></br>
+            
+            <Button
+                            type="submit"
+                            color="primary"
+                            variant="contained"
+                            fullWidth
+                            style={{margin: '24px 0'}}
+                        
+                           onClick={login}> Login
+                        </Button>  
+          
+
             <p>Not Registered?
-                <Link to="/signup">Sign Up!</Link></p>
+                
+                <Link to="/signup">Sign Up!</Link>
+                </p>
+                </Typography>
+               
+
+                </Paper>
+            </Grid>
+        </Grid>
         </>
     );
 };
