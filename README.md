@@ -31,7 +31,7 @@ mongod -dbpath db
 
 ## API Configuration
 
-Describe any configuration that needs to take place before running the API. For example, creating an `.env` file and what variables to put in it. Give an example of how this might be done.
+creating an `.env` file and what variables to put in it. Give an example of how this might be done.
 
 REMEMBER: DON'T PUT YOUR OWN USERNAMES/PASSWORDS/AUTH KEYS IN THE README OR ON GITHUB, just placeholders as indicated below:
 
@@ -58,8 +58,7 @@ If you have your API design on an online platform or graphic, please link to it 
 
 Give details of authentication/security implemented on the API (e.g. passport/sessions). Indicate which routes are protected.
 
-```
- <Route element={<ProtectedRoutes />}>
+```js <Route element={<ProtectedRoutes />}>
         </Route>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/movies/favorites" element={<FavoriteMoviesPage/>}/>
@@ -67,15 +66,14 @@ Give details of authentication/security implemented on the API (e.g. passport/se
           <Route path="/logout" element={<LoginPage />} />
           <Route path="/reviews/form" element={<AddMovieReviewPage/>}/>
         </Routes>
-        ```
+         ```
 
 
 ## Integrating with React App
 
 Describe how you integrated your React app with the API. List the views that use your Web API instead of the TMDB API. Describe any other updates to the React app from Assignment One.
 
-```
-export const getMovies = () => {
+```js export const getMovies = () => {
     return fetch(
         '/api/movies',
         {headers: {
