@@ -44,3 +44,9 @@ router.get(
     })
   );
 export default router;
+
+router.get('/tmdb/trending', asyncHandler(async (req, res) => {
+    let {page = 1} = req.query
+    const upcomingMovies = await getTrending(page);
+    res.status(200).json(upcomingMovies);
+}));
