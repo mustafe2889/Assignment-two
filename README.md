@@ -1,10 +1,10 @@
 # Assignment 2 - Web API.
 
-Name: Your Name
+Name: Mustafe Abdi Mohamoud
 
 ## Features.
 
-A bullet-point list of the ADDITIONAL features you have implemented in the API **WERE WERE NOT IN THE LABS** (or modifications to existing features)
+A bullet-point list of the ADDITIONAL features you have implemented in the API **THAT WERE WERE NOT IN THE LABS** (or modifications to existing features)
  
  + Feature 1 - Implemented user login, signup and authentication
  + Feature 2 - Implemented api for trending movies.
@@ -14,9 +14,14 @@ A bullet-point list of the ADDITIONAL features you have implemented in the API *
  + Feature 3 
  + etc
 
-## Setup requirements.
+## Setup requirements/Installation requirements .
 
-[ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
+```
+install mongo, mongoose, mongo atlas.
+```
+```
+mongod -dbpath db
+```
 
 ## API Configuration
 
@@ -53,4 +58,4 @@ Describe how you integrated your React app with the API. List the views that use
 
 ## Independent learning (if relevant)
 
-Briefly explain any non-standard features developed for the app.   
+Experimented with the API setup to configure Mongoose and MongoDB Atlas integration. Made significant progress but fell slightly short of completion.
