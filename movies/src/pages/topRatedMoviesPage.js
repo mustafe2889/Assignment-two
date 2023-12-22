@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PageTemplate from '../components/templateMovieListPage'
 import { getTopRatedMovies } from "../api/tmdb-api";
-import MustWatchMovies from '../components/cardIcons/mustWatchMovies'
 import Spinner from '../components/spinner';
 import { useQuery } from "react-query";
 import Pagination from '@mui/material/Pagination';
